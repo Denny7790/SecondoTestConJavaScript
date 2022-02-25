@@ -1,0 +1,41 @@
++<!DOCTYPE html>
+<html>
+<head>
+
+        <title>My Dynamic details page </title>
+        <script type="text/javascript">
+
+        function displayInput() //funzione per far vedere in blu sul display
+        { 
+            var testInput = document.getElementById("name").value;
+
+            if (testInput.length == 0)
+            {  
+                document.getElementById("para").innerHTML = "NON C'HAI CAPITO UN CAZZ!!";
+            }
+            else
+                document.getElementById("para").innerHTML = testInput;
+            }   
+        </script>
+</head>
+
+<body>
+
+    <h1 style ="color:rebeccapurple;"> VEDIAMO UN ALTRO BOTTONE</h1>
+
+    <input id="name" type="text"/>
+
+    <button onclick="displayInput();"> DAI SCHIACCIA PATRIK </button>
+    
+    <p id="para" style="color:rebeccapurple;"></p>
+
+
+        
+  
+
+
+
+</body>
+
+
+</html>
